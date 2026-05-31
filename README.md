@@ -4,9 +4,9 @@ LumoRoll is a native iPhone-first SwiftUI app for turning one reference photo in
 
 The product is intentionally light, friendly, film-inspired, and local-first. It is not a generic filter app and not a professional grading suite.
 
-## Current MVP1 Status
+## Current Status
 
-The MVP1 app implementation exists in this workspace.
+The app implementation exists in this workspace.
 
 - Generated Xcode project: `LumoRoll.xcodeproj`
 - Project definition: `project.yml`
@@ -24,7 +24,7 @@ This public repository includes the native app source, deterministic Algorithm V
 
 The production app may include a private, locally bundled Core ML base-LUT predictor. That model implementation, artifact, and metadata are intentionally not included in this public repository. Public source builds use Algorithm V2 for reference-image Film Roll creation.
 
-## What MVP1 Includes
+## App Features
 
 - Create a Film Roll from exactly one reference image, or from one local `.cube` LUT file.
 - Import reference and target photos from Photos or Files.
@@ -42,7 +42,7 @@ The production app may include a private, locally bundled Core ML base-LUT predi
 - Export the Film Roll base LUT through a system `.cube` file export flow. Sample analysis, confidence, model, and adaptive metadata stay inside the app and are not written into `.cube`.
 - View frames in a dark fullscreen viewer; processed frames can be shared, edited, or removed.
 
-MVP1 does not include video import/export, video processing, HDR, Log workflows, advanced Display P3 handling, iCloud sync, accounts, cloud processing, network-based AI, search, duplicate, or fullscreen Save to Photos.
+The current app is photo-only and local-first. It does not include video import/export, video processing, HDR, Log workflows, advanced Display P3 handling, iCloud sync, accounts, cloud processing, network-based AI, search, duplicate, or fullscreen Save to Photos.
 
 ## Architecture
 
@@ -98,11 +98,11 @@ npm install
 npm run dev
 ```
 
-## Roadmap
+## Future Work
 
-MVP1 hardening follow-ups include memory profiling, display cache eviction review, temporary-file cleanup review after crash recovery, and public/private release packaging checks for the optional local model.
+Hardening follow-ups include memory profiling, display cache eviction review, temporary-file cleanup review after crash recovery, and public/private release packaging checks for the optional local model.
 
-MVP2 candidates include iCloud sync, video support, HDR / Log / Display P3 workflows, advanced skin-tone and neutral-gray protection controls, richer model quality controls, richer LUT controls, and additional organization/sharing features.
+Future candidates include iCloud sync, video support, HDR / Log / Display P3 workflows, advanced skin-tone and neutral-gray protection controls, richer model quality controls, richer LUT controls, and additional organization/sharing features.
 
 ## License
 

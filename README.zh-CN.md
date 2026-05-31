@@ -4,9 +4,9 @@ LumoRoll 是一个 iPhone-first 的原生 SwiftUI App，用一张参考照片生
 
 产品方向是轻盈、友好、有胶片感、local-first。它不是普通滤镜 App，也不是专业调色套件。
 
-## 当前 MVP1 状态
+## 当前状态
 
-当前 workspace 已经包含 MVP1 App 实现。
+当前 workspace 已经包含完整 App 实现。
 
 - Xcode project：`LumoRoll.xcodeproj`
 - Project definition：`project.yml`
@@ -24,7 +24,7 @@ LumoRoll 是一个 iPhone-first 的原生 SwiftUI App，用一张参考照片生
 
 正式 App 可以携带一个私有的本地 Core ML base-LUT predictor。该模型实现、artifact 和 metadata 都不包含在公开仓库中。公开源码构建使用 Algorithm V2 创建 reference-image Film Roll。
 
-## MVP1 已包含
+## App 功能
 
 - 用一张 reference image，或一个本地 `.cube` LUT 文件，创建一卷 Film Roll。
 - 从 Photos 或 Files 导入 reference / target 照片。
@@ -42,7 +42,7 @@ LumoRoll 是一个 iPhone-first 的原生 SwiftUI App，用一张参考照片生
 - 支持通过系统文件导出流程导出 Film Roll 的 base LUT `.cube`。sample analysis、confidence、model 和 adaptive metadata 只留在 App 内，不写入 `.cube`。
 - Fullscreen viewer 使用深色沉浸式浏览；processed frames 支持 Share、Edit 和 Remove。
 
-MVP1 不包含视频导入/导出、视频处理、HDR、Log、Display P3 高级流程、iCloud 同步、账号、云处理、联网 AI、搜索、复制 Film Roll，以及 fullscreen Save to Photos。
+当前 App 是 photo-only 和 local-first 的产品形态，不包含视频导入/导出、视频处理、HDR、Log、Display P3 高级流程、iCloud 同步、账号、云处理、联网 AI、搜索、复制 Film Roll，以及 fullscreen Save to Photos。
 
 ## 架构
 
@@ -98,11 +98,11 @@ npm install
 npm run dev
 ```
 
-## Roadmap
+## 后续方向
 
-MVP1 后续 hardening 包括内存 profiling、display cache eviction review、崩溃恢复后的临时文件清理 review，以及可选本地模型的 public/private release packaging 检查。
+后续 hardening 包括内存 profiling、display cache eviction review、崩溃恢复后的临时文件清理 review，以及可选本地模型的 public/private release packaging 检查。
 
-MVP2 候选项包括 iCloud 同步、视频支持、HDR / Log / Display P3 流程、更高级的肤色和中性灰保护控制、更丰富的模型质量控制、更丰富的 LUT 控制，以及更多整理和分享能力。
+未来候选方向包括 iCloud 同步、视频支持、HDR / Log / Display P3 流程、更高级的肤色和中性灰保护控制、更丰富的模型质量控制、更丰富的 LUT 控制，以及更多整理和分享能力。
 
 ## License
 
