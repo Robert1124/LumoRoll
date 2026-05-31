@@ -1,0 +1,18 @@
+LumoRoll Brand And Asset Notice
+
+The MIT License in this repository applies to source code and documentation
+unless a file states otherwise.
+
+The following are not licensed for unrestricted reuse under the MIT License:
+
+- The LumoRoll name, wordmark, and product identity.
+- App icons and brand icons under `LumoRoll/Resources/Assets.xcassets/`.
+- Public website brand/product images under `web/public/lumoroll-assets/`.
+- Product presentation imagery under `design/`.
+
+These assets are included so the LumoRoll app and project website can be built
+and reviewed from this repository. You may not use them to imply endorsement,
+publish a confusingly similar product, or reuse the LumoRoll brand identity in
+another project without permission.
+
+Third-party dependencies keep their own licenses.

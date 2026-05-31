@@ -1,0 +1,970 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000967E764D55EB5FF7D4F3E /* PhotoImportStagingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501588A34F8E73869915BBEE /* PhotoImportStagingServiceTests.swift */; };
+		0129679C17BFA0D9463B10ED /* PreviewControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527CF3F4D727E97D6FE8B510 /* PreviewControls.swift */; };
+		0AAB926B4F3C7F10B4DDCB05 /* PhotoImporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17DF58D8711745A930E1302 /* PhotoImporting.swift */; };
+		0B37988CD34EAF4763897E28 /* CreateFilmRollUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6FAE378DEF71E61815CC65 /* CreateFilmRollUseCaseTests.swift */; };
+		0CF9C8879249885D60E693F4 /* ApplyFilmRollUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567685FA432E830702F60C70 /* ApplyFilmRollUseCase.swift */; };
+		0F75D90826E1C6E84FE52350 /* PhotoLibraryWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F314FD9263EEFAD3F3AC04D /* PhotoLibraryWriting.swift */; };
+		107A666AD5192B5127F9229E /* CubeExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B1A12AE0F27700C16CC3D /* CubeExporter.swift */; };
+		10ABDC2AC809A2F59821D546 /* CoreImagePhotoPreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359995973788231C14477017 /* CoreImagePhotoPreviewRenderer.swift */; };
+		148CD9F48E6479E2378E84AF /* FilmRollAssetWriting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AEF2F054C7A5D43F5F93C7 /* FilmRollAssetWriting.swift */; };
+		1582A4D98955BD6D955F4C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01331935C328E0031835D3C2 /* Assets.xcassets */; };
+		179892DE9FE3488423046386 /* ProcessedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52428829B43D447ED65BFC43 /* ProcessedPhoto.swift */; };
+		1E711CB17BAFB3E3A7C86577 /* CoreImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0511B28120B1EBBED8BFF74 /* CoreImageRenderer.swift */; };
+		1E866CD664518A012A841685 /* ExportLUTUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7032A23D0052731A18DA1DE8 /* ExportLUTUseCase.swift */; };
+		21067CE1BA0222837DD32BFF /* CubeLUTExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D9F3186D4F8006F443672 /* CubeLUTExportDocument.swift */; };
+		21B277CC8BE6736DC1ED50ED /* CreateFilmRollScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC4726D18EE54637C59AF5 /* CreateFilmRollScreen.swift */; };
+		257B42D462DF8554D3D8C7B0 /* LUTGenerating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AD6A32AD8966B090071429 /* LUTGenerating.swift */; };
+		2747CF431976076296F76D54 /* SystemIntegrationImageFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381981BDE9426676F5DF0EF /* SystemIntegrationImageFixtures.swift */; };
+		2F0D70D3CED5695FDDE58247 /* LUTProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129ACA470D74319109EA6BE4 /* LUTProcessingTests.swift */; };
+		3101200F7D115BE296B95FCD /* FilmStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF798E9C6F0132EE61B281A /* FilmStrip.swift */; };
+		3348708815532B23E8C174A3 /* LibraryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2839155B83ADE9A61A960D4F /* LibraryScreen.swift */; };
+		3478E5272519D519FAB887B1 /* FileFilmRollRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8CDFDBB4ADA0BC1E10706 /* FileFilmRollRepository.swift */; };
+		42F597353B90BAE5C79C1E36 /* ExportLUTUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0074290F767621765393E86 /* ExportLUTUseCaseTests.swift */; };
+		454D1D58CAC715056F773822 /* AssetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3602559C9A656D73E8DC1316 /* AssetStore.swift */; };
+		45626D1AE9951E485EABBCC0 /* RenderApplyPreviewUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5AEF6EC10C2C6DDB46303 /* RenderApplyPreviewUseCaseTests.swift */; };
+		4C4727EBDD4D057398811967 /* CoreImageRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3E26B96FBC9965E7AE8D70 /* CoreImageRendererTests.swift */; };
+		535C7204D29876FE17F33A8A /* SaveAppliedPhotoToPhotosUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93ED9C6DCE828B849D71A63 /* SaveAppliedPhotoToPhotosUseCaseTests.swift */; };
+		5365C91499555CC5A81D4F00 /* AppContainerBoundaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD128FF3D9E377F39DBD2BE /* AppContainerBoundaryTests.swift */; };
+		540AAB61F2AAE43E6218D917 /* PaletteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2AEF96F11133BF8AAC77F6 /* PaletteRow.swift */; };
+		5DB93CBDB639C9A86F30F8FD /* ReversalFilmRollCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E75BF7A35D97135ED5BE3A /* ReversalFilmRollCard.swift */; };
+		5EEC5876A043ECC062F4217A /* JPEGImageEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8F04D159DCD3ADE3BFE27 /* JPEGImageEncoder.swift */; };
+		61057AE662669A41ADA55CCB /* FilmRollDetailFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E21182F4F595713E07133B /* FilmRollDetailFeatureModel.swift */; };
+		6195B93DD0AA0181F64449B4 /* LocalPhotoImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB26B1AC2E8151C8126959BD /* LocalPhotoImageLoaderTests.swift */; };
+		65C7E7187625EA1A056F9074 /* FilmRollDetailExportPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D5A8C4AB2C98D6C37772B /* FilmRollDetailExportPresentationTests.swift */; };
+		6984F5254FEB6EC77C58A879 /* FileFilmRollRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0DFC717D707555508017F7 /* FileFilmRollRepositoryTests.swift */; };
+		6A85F45254F016DD1CA67170 /* LUTExporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E62BBD0F8530C9C97214C77 /* LUTExporting.swift */; };
+		6F68AD85C6231840DE071BD1 /* LumoRollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525A3C87F4791B527CEF800 /* LumoRollApp.swift */; };
+		73B742747DFF39A309E6BABC /* CoreImagePhotoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A7FF9724C14371BA8713D /* CoreImagePhotoRenderer.swift */; };
+		7508ED2B45640772E152CFC8 /* PhotoDisplayImageStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69384C07C390ACC4E00462A5 /* PhotoDisplayImageStoreTests.swift */; };
+		7663E16E16301EB4E5292504 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1CBA457A613937DA1DBF7 /* AppContainer.swift */; };
+		78D5D7E875CEA842AB83503B /* LUTGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4D6B60C233B936F8DAA03 /* LUTGenerator.swift */; };
+		7B69220651E05FABD11A7459 /* LibraryFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18B28CB5BF98DCDB161B92 /* LibraryFeatureModel.swift */; };
+		8092C9A78CF11B298F07D68E /* ApplyPhotoFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237A76213D20AD7658EB615 /* ApplyPhotoFeatureModel.swift */; };
+		8342FE6292D4989C9AB9B051 /* FilmRollRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD3FD3841AE93BD4CDEA8A6 /* FilmRollRepository.swift */; };
+		884FA97CB5E3D7B43B49A9A9 /* FilmRollCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA35EF22D858DF5357675D45 /* FilmRollCard.swift */; };
+		8A3388477804FF19380E2064 /* PhotoRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9549C969B5657233FD02EA3F /* PhotoRendering.swift */; };
+		8D91184F454F20266F15FC27 /* ApplyFilmRollUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF290F16AEB83E665686AF /* ApplyFilmRollUseCaseTests.swift */; };
+		8D929F97F2FE3D4C9D58C07E /* LumoButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10248B3CF217022C627D585 /* LumoButtons.swift */; };
+		8EA17A74D2BE0D27C3E26ABA /* DesignSystemHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283040744874391379378126 /* DesignSystemHelperTests.swift */; };
+		93C9DAB74C3894953C7E00A2 /* ReferenceImageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A740FF8726A904A1E6B080 /* ReferenceImageAnalyzer.swift */; };
+		9629425D250809099254F974 /* AppAssetURLResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138F38893B7B8001E156693A /* AppAssetURLResolverTests.swift */; };
+		A03ED9E4D1FF2FF8DE392C4C /* FilmRollDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575776B5CB9425B46E8DFA65 /* FilmRollDetailScreen.swift */; };
+		A1B53FE4F23D4143AAE39797 /* CreateFilmRollFeatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11318130C11DE53F4128C30D /* CreateFilmRollFeatureModel.swift */; };
+		A929974DCA1923AB90B48A4F /* CoreImagePhotoRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD3A1AD66A3EDFAA1FF5CC /* CoreImagePhotoRendererTests.swift */; };
+		AB1BC3767B5039E90FAA5D97 /* PhotoImportStagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F752326F90D32AADD41FED1 /* PhotoImportStagingService.swift */; };
+		AC4AAD64FD43B15E74BEB757 /* CoreImageThumbnailRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC173940E896ED35B13ADD1 /* CoreImageThumbnailRendererTests.swift */; };
+		AE53E903913D0A6A0B5F098D /* PhotoDisplayImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE24FD7C2B2E51D99513A0 /* PhotoDisplayImageStore.swift */; };
+		AEC18E5DC91A3DC17D5322DE /* FileFilmRollAssetWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE744EC161A390DEEC7D8AD2 /* FileFilmRollAssetWriterTests.swift */; };
+		AF76F83052330737E2D9BB07 /* PhotoKitPhotoLibraryWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0913523205957CB1781BBC0 /* PhotoKitPhotoLibraryWriter.swift */; };
+		B31A6A5E9843648731991BA9 /* LocalPhotoImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090599679907E4C400DD667F /* LocalPhotoImageLoader.swift */; };
+		BAB9D031CC32E20747161D71 /* FilmRollDisplayDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205ED0A881D0542FCB8ABB74 /* FilmRollDisplayDataTests.swift */; };
+		BDEF5A10AD78CD2C9F756252 /* Task7BBoundaryHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55BF2CC6F42BCC9587197A /* Task7BBoundaryHelperTests.swift */; };
+		C014A7415B2B76E5E379EE8F /* ThumbnailRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2E8BACDC39F0813FDF4F7 /* ThumbnailRendering.swift */; };
+		C1FF68D9849BAD8CA2EF15F3 /* FilmRollDetailLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB948DD0128A04DE86C86A /* FilmRollDetailLayoutTests.swift */; };
+		C5D85184BB26F7C54EA7E343 /* PhotoPreviewRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C7304C91F0DB4420E7393 /* PhotoPreviewRendering.swift */; };
+		C72ED28B4566B5EE34FB1E90 /* CoreImageThumbnailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D8C0A01AB26465CEAB1485 /* CoreImageThumbnailRenderer.swift */; };
+		C8B245B944A2FAAACE266133 /* FilmRollDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438A91DD6B7D52994B76E96 /* FilmRollDisplayData.swift */; };
+		CD6C1CC55CCFC40C60F96DBE /* LumoTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DA40116AC46A5265A73D85 /* LumoTheme.swift */; };
+		CE8C043EFEECE8F129C8FBB9 /* PhotoKitPhotoLibraryWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71B79F559088BBEA9851D71 /* PhotoKitPhotoLibraryWriterTests.swift */; };
+		CE91EDAE55DE045A16E28EC3 /* ApplyPhotoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEA5DF2782568449562B3C /* ApplyPhotoScreen.swift */; };
+		D113C407FE15C3F8BD30E0FA /* AssetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7932FBACE98B6068B51ADFFC /* AssetStoreTests.swift */; };
+		D247776E45332DF8343433D4 /* FilmRollManifestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD6F571747F252D81370F8 /* FilmRollManifestTests.swift */; };
+		D4B5B2987E612688620D19B4 /* LumoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD9BDD554A23127E6DF4B1B /* LumoError.swift */; };
+		D4E0A91863DDA0A5134AD276 /* SaveAppliedPhotoToPhotosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3FB70D5F455674E8948896 /* SaveAppliedPhotoToPhotosUseCase.swift */; };
+		D4F1960677D700F41D771A33 /* DomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ECF36F07C3C624133994A4 /* DomainModelTests.swift */; };
+		D65F2415A963FF147399EE66 /* FeatureModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B0CA813CAB1078A2FAAEC1 /* FeatureModelTests.swift */; };
+		DBEEEFBDEA736D5B9F6C6A25 /* RenderApplyPreviewUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F99225EDF563F30EE09A34 /* RenderApplyPreviewUseCase.swift */; };
+		E8B9AD82F67F760067BA9EE5 /* LumoRollSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E8666F4CDF306018A0E63 /* LumoRollSmokeTests.swift */; };
+		EB4A0EAAEA0295FEAF274C92 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A30CEB69DD2AA1F2DB8FB /* AppRoute.swift */; };
+		EB6E96232DA9F161ABA7C275 /* LumoPreviewFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ED933EC55D2F7DA68F6A2 /* LumoPreviewFixtures.swift */; };
+		ECF1DD35B457A430896E052C /* ApplyPhotoImportFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82786762AA6B6773148767C /* ApplyPhotoImportFlowTests.swift */; };
+		EE1F60E269E71BB2F2713816 /* AppAssetURLResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40776639F60B1B768E57622A /* AppAssetURLResolver.swift */; };
+		EE57DB9BD36F006B65BBD204 /* FullscreenViewerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF1329DD3865A81EC40989 /* FullscreenViewerScreen.swift */; };
+		F41E491C493D6E9888CFEA57 /* FilmRollManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857E9D8A5EF5C7076CE54F58 /* FilmRollManifest.swift */; };
+		F4A9F20DA261D2351C505CA0 /* LumoPhotoDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DD2FE18618F47FF64768E2 /* LumoPhotoDisplayData.swift */; };
+		FC866ED8F7F15C7297F6C909 /* LUT3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EE25FAA91BDA33DA5A069 /* LUT3D.swift */; };
+		FE4F281AAAA53420AD651453 /* FilmRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029FFC3129B92F484218BE61 /* FilmRoll.swift */; };
+		FEE69F354D5E4356E3DC215E /* FileFilmRollAssetWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F00A1C07233D84BD37FAE2 /* FileFilmRollAssetWriter.swift */; };
+		FF77F5B14658039D0CBA2ADA /* CreateFilmRollUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B3D11B7B525424452CF9FD /* CreateFilmRollUseCase.swift */; };
+		FFD08ACB47F87E99615883B7 /* CoreImagePhotoPreviewRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB2FD5D2BE32FEED45692A0 /* CoreImagePhotoPreviewRendererTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE726FACB1AF228A05268949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54F4C56025DAA968C3110EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8077D7EA3FA41FE034B32E0;
+			remoteInfo = LumoRoll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01331935C328E0031835D3C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		029FFC3129B92F484218BE61 /* FilmRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRoll.swift; sourceTree = "<group>"; };
+		090599679907E4C400DD667F /* LocalPhotoImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhotoImageLoader.swift; sourceTree = "<group>"; };
+		0D0B1A12AE0F27700C16CC3D /* CubeExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeExporter.swift; sourceTree = "<group>"; };
+		0E18B28CB5BF98DCDB161B92 /* LibraryFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryFeatureModel.swift; sourceTree = "<group>"; };
+		11318130C11DE53F4128C30D /* CreateFilmRollFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFilmRollFeatureModel.swift; sourceTree = "<group>"; };
+		129ACA470D74319109EA6BE4 /* LUTProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTProcessingTests.swift; sourceTree = "<group>"; };
+		138F38893B7B8001E156693A /* AppAssetURLResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssetURLResolverTests.swift; sourceTree = "<group>"; };
+		14DC4726D18EE54637C59AF5 /* CreateFilmRollScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFilmRollScreen.swift; sourceTree = "<group>"; };
+		15C76DA5718F1AEAA43655C7 /* LumoRollTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LumoRollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E62BBD0F8530C9C97214C77 /* LUTExporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTExporting.swift; sourceTree = "<group>"; };
+		205ED0A881D0542FCB8ABB74 /* FilmRollDisplayDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDisplayDataTests.swift; sourceTree = "<group>"; };
+		21F4D6B60C233B936F8DAA03 /* LUTGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTGenerator.swift; sourceTree = "<group>"; };
+		25B2E8BACDC39F0813FDF4F7 /* ThumbnailRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRendering.swift; sourceTree = "<group>"; };
+		27BD6F571747F252D81370F8 /* FilmRollManifestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollManifestTests.swift; sourceTree = "<group>"; };
+		283040744874391379378126 /* DesignSystemHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemHelperTests.swift; sourceTree = "<group>"; };
+		2839155B83ADE9A61A960D4F /* LibraryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryScreen.swift; sourceTree = "<group>"; };
+		2B3D5A8C4AB2C98D6C37772B /* FilmRollDetailExportPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailExportPresentationTests.swift; sourceTree = "<group>"; };
+		2EF798E9C6F0132EE61B281A /* FilmStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmStrip.swift; sourceTree = "<group>"; };
+		335ED933EC55D2F7DA68F6A2 /* LumoPreviewFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoPreviewFixtures.swift; sourceTree = "<group>"; };
+		3525A3C87F4791B527CEF800 /* LumoRollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoRollApp.swift; sourceTree = "<group>"; };
+		359995973788231C14477017 /* CoreImagePhotoPreviewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImagePhotoPreviewRenderer.swift; sourceTree = "<group>"; };
+		3602559C9A656D73E8DC1316 /* AssetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetStore.swift; sourceTree = "<group>"; };
+		38FEA5DF2782568449562B3C /* ApplyPhotoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyPhotoScreen.swift; sourceTree = "<group>"; };
+		3ACF290F16AEB83E665686AF /* ApplyFilmRollUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFilmRollUseCaseTests.swift; sourceTree = "<group>"; };
+		3CB2FD5D2BE32FEED45692A0 /* CoreImagePhotoPreviewRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImagePhotoPreviewRendererTests.swift; sourceTree = "<group>"; };
+		40776639F60B1B768E57622A /* AppAssetURLResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssetURLResolver.swift; sourceTree = "<group>"; };
+		43E21182F4F595713E07133B /* FilmRollDetailFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailFeatureModel.swift; sourceTree = "<group>"; };
+		4438A91DD6B7D52994B76E96 /* FilmRollDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDisplayData.swift; sourceTree = "<group>"; };
+		4DAD3A1AD66A3EDFAA1FF5CC /* CoreImagePhotoRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImagePhotoRendererTests.swift; sourceTree = "<group>"; };
+		4F314FD9263EEFAD3F3AC04D /* PhotoLibraryWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryWriting.swift; sourceTree = "<group>"; };
+		501588A34F8E73869915BBEE /* PhotoImportStagingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImportStagingServiceTests.swift; sourceTree = "<group>"; };
+		51DA40116AC46A5265A73D85 /* LumoTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoTheme.swift; sourceTree = "<group>"; };
+		52428829B43D447ED65BFC43 /* ProcessedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedPhoto.swift; sourceTree = "<group>"; };
+		527CF3F4D727E97D6FE8B510 /* PreviewControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewControls.swift; sourceTree = "<group>"; };
+		567685FA432E830702F60C70 /* ApplyFilmRollUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFilmRollUseCase.swift; sourceTree = "<group>"; };
+		575776B5CB9425B46E8DFA65 /* FilmRollDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailScreen.swift; sourceTree = "<group>"; };
+		5AB8F04D159DCD3ADE3BFE27 /* JPEGImageEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPEGImageEncoder.swift; sourceTree = "<group>"; };
+		607E8666F4CDF306018A0E63 /* LumoRollSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoRollSmokeTests.swift; sourceTree = "<group>"; };
+		61B0CA813CAB1078A2FAAEC1 /* FeatureModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModelTests.swift; sourceTree = "<group>"; };
+		61BF1329DD3865A81EC40989 /* FullscreenViewerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenViewerScreen.swift; sourceTree = "<group>"; };
+		61E75BF7A35D97135ED5BE3A /* ReversalFilmRollCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversalFilmRollCard.swift; sourceTree = "<group>"; };
+		6381981BDE9426676F5DF0EF /* SystemIntegrationImageFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIntegrationImageFixtures.swift; sourceTree = "<group>"; };
+		69384C07C390ACC4E00462A5 /* PhotoDisplayImageStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayImageStoreTests.swift; sourceTree = "<group>"; };
+		6B5A7FF9724C14371BA8713D /* CoreImagePhotoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImagePhotoRenderer.swift; sourceTree = "<group>"; };
+		6FBB948DD0128A04DE86C86A /* FilmRollDetailLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailLayoutTests.swift; sourceTree = "<group>"; };
+		7032A23D0052731A18DA1DE8 /* ExportLUTUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLUTUseCase.swift; sourceTree = "<group>"; };
+		791EE25FAA91BDA33DA5A069 /* LUT3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUT3D.swift; sourceTree = "<group>"; };
+		7932FBACE98B6068B51ADFFC /* AssetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetStoreTests.swift; sourceTree = "<group>"; };
+		7E4E788E361DED8CDE8C82D9 /* LumoRoll.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LumoRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD3FD3841AE93BD4CDEA8A6 /* FilmRollRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollRepository.swift; sourceTree = "<group>"; };
+		833D9F3186D4F8006F443672 /* CubeLUTExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeLUTExportDocument.swift; sourceTree = "<group>"; };
+		83DD2FE18618F47FF64768E2 /* LumoPhotoDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoPhotoDisplayData.swift; sourceTree = "<group>"; };
+		83F00A1C07233D84BD37FAE2 /* FileFilmRollAssetWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFilmRollAssetWriter.swift; sourceTree = "<group>"; };
+		857E9D8A5EF5C7076CE54F58 /* FilmRollManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollManifest.swift; sourceTree = "<group>"; };
+		89ECF36F07C3C624133994A4 /* DomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModelTests.swift; sourceTree = "<group>"; };
+		8A3FB70D5F455674E8948896 /* SaveAppliedPhotoToPhotosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAppliedPhotoToPhotosUseCase.swift; sourceTree = "<group>"; };
+		8F752326F90D32AADD41FED1 /* PhotoImportStagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImportStagingService.swift; sourceTree = "<group>"; };
+		916A30CEB69DD2AA1F2DB8FB /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		9549C969B5657233FD02EA3F /* PhotoRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRendering.swift; sourceTree = "<group>"; };
+		9A9C7304C91F0DB4420E7393 /* PhotoPreviewRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewRendering.swift; sourceTree = "<group>"; };
+		9CA5AEF6EC10C2C6DDB46303 /* RenderApplyPreviewUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderApplyPreviewUseCaseTests.swift; sourceTree = "<group>"; };
+		9DD128FF3D9E377F39DBD2BE /* AppContainerBoundaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerBoundaryTests.swift; sourceTree = "<group>"; };
+		A5B3D11B7B525424452CF9FD /* CreateFilmRollUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFilmRollUseCase.swift; sourceTree = "<group>"; };
+		ACB8CDFDBB4ADA0BC1E10706 /* FileFilmRollRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFilmRollRepository.swift; sourceTree = "<group>"; };
+		ADAE24FD7C2B2E51D99513A0 /* PhotoDisplayImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayImageStore.swift; sourceTree = "<group>"; };
+		AE3E26B96FBC9965E7AE8D70 /* CoreImageRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageRendererTests.swift; sourceTree = "<group>"; };
+		B10248B3CF217022C627D585 /* LumoButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoButtons.swift; sourceTree = "<group>"; };
+		B1D8C0A01AB26465CEAB1485 /* CoreImageThumbnailRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageThumbnailRenderer.swift; sourceTree = "<group>"; };
+		BAD9BDD554A23127E6DF4B1B /* LumoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumoError.swift; sourceTree = "<group>"; };
+		BC0DFC717D707555508017F7 /* FileFilmRollRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFilmRollRepositoryTests.swift; sourceTree = "<group>"; };
+		BE6FAE378DEF71E61815CC65 /* CreateFilmRollUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFilmRollUseCaseTests.swift; sourceTree = "<group>"; };
+		C8A740FF8726A904A1E6B080 /* ReferenceImageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceImageAnalyzer.swift; sourceTree = "<group>"; };
+		CA35EF22D858DF5357675D45 /* FilmRollCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollCard.swift; sourceTree = "<group>"; };
+		CAE1CBA457A613937DA1DBF7 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		D0511B28120B1EBBED8BFF74 /* CoreImageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageRenderer.swift; sourceTree = "<group>"; };
+		D0913523205957CB1781BBC0 /* PhotoKitPhotoLibraryWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoKitPhotoLibraryWriter.swift; sourceTree = "<group>"; };
+		D17DF58D8711745A930E1302 /* PhotoImporting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImporting.swift; sourceTree = "<group>"; };
+		D82786762AA6B6773148767C /* ApplyPhotoImportFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyPhotoImportFlowTests.swift; sourceTree = "<group>"; };
+		D93ED9C6DCE828B849D71A63 /* SaveAppliedPhotoToPhotosUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAppliedPhotoToPhotosUseCaseTests.swift; sourceTree = "<group>"; };
+		D9F99225EDF563F30EE09A34 /* RenderApplyPreviewUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderApplyPreviewUseCase.swift; sourceTree = "<group>"; };
+		DA55BF2CC6F42BCC9587197A /* Task7BBoundaryHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task7BBoundaryHelperTests.swift; sourceTree = "<group>"; };
+		E0074290F767621765393E86 /* ExportLUTUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLUTUseCaseTests.swift; sourceTree = "<group>"; };
+		E3AD6A32AD8966B090071429 /* LUTGenerating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTGenerating.swift; sourceTree = "<group>"; };
+		E9AEF2F054C7A5D43F5F93C7 /* FilmRollAssetWriting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollAssetWriting.swift; sourceTree = "<group>"; };
+		EA2AEF96F11133BF8AAC77F6 /* PaletteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteRow.swift; sourceTree = "<group>"; };
+		EB26B1AC2E8151C8126959BD /* LocalPhotoImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhotoImageLoaderTests.swift; sourceTree = "<group>"; };
+		EDC173940E896ED35B13ADD1 /* CoreImageThumbnailRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageThumbnailRendererTests.swift; sourceTree = "<group>"; };
+		F237A76213D20AD7658EB615 /* ApplyPhotoFeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyPhotoFeatureModel.swift; sourceTree = "<group>"; };
+		F71B79F559088BBEA9851D71 /* PhotoKitPhotoLibraryWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoKitPhotoLibraryWriterTests.swift; sourceTree = "<group>"; };
+		FE744EC161A390DEEC7D8AD2 /* FileFilmRollAssetWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFilmRollAssetWriterTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		038CF09E2AF5971D28B5C8B7 /* LUT */ = {
+			isa = PBXGroup;
+			children = (
+				0D0B1A12AE0F27700C16CC3D /* CubeExporter.swift */,
+				21F4D6B60C233B936F8DAA03 /* LUTGenerator.swift */,
+				C8A740FF8726A904A1E6B080 /* ReferenceImageAnalyzer.swift */,
+			);
+			path = LUT;
+			sourceTree = "<group>";
+		};
+		09CFE9E0367D85AF00C69E7A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4438A91DD6B7D52994B76E96 /* FilmRollDisplayData.swift */,
+				0E18B28CB5BF98DCDB161B92 /* LibraryFeatureModel.swift */,
+				2839155B83ADE9A61A960D4F /* LibraryScreen.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		123816CB3425F7AECB2E85CE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6468E7B02085DBCFACA5B778 /* ApplyPhoto */,
+				31CFC29BCABBA7E23CEA7E52 /* CreateFilmRoll */,
+				18B2185F37F2C74BCE55F640 /* FilmRollDetail */,
+				A519336E4B30ED63BA19EFB2 /* FullscreenViewer */,
+				09CFE9E0367D85AF00C69E7A /* Library */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		18B2185F37F2C74BCE55F640 /* FilmRollDetail */ = {
+			isa = PBXGroup;
+			children = (
+				833D9F3186D4F8006F443672 /* CubeLUTExportDocument.swift */,
+				43E21182F4F595713E07133B /* FilmRollDetailFeatureModel.swift */,
+				575776B5CB9425B46E8DFA65 /* FilmRollDetailScreen.swift */,
+			);
+			path = FilmRollDetail;
+			sourceTree = "<group>";
+		};
+		1E4B009BE2570E9A7CE67583 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				51DA40116AC46A5265A73D85 /* LumoTheme.swift */,
+				44EE043BF1CC9613D7459699 /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		28AD66180210508412736B4A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				3602559C9A656D73E8DC1316 /* AssetStore.swift */,
+				83F00A1C07233D84BD37FAE2 /* FileFilmRollAssetWriter.swift */,
+				ACB8CDFDBB4ADA0BC1E10706 /* FileFilmRollRepository.swift */,
+				857E9D8A5EF5C7076CE54F58 /* FilmRollManifest.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2F2DCA9C6DDA1DBAA92DD069 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E4E788E361DED8CDE8C82D9 /* LumoRoll.app */,
+				15C76DA5718F1AEAA43655C7 /* LumoRollTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31CFC29BCABBA7E23CEA7E52 /* CreateFilmRoll */ = {
+			isa = PBXGroup;
+			children = (
+				11318130C11DE53F4128C30D /* CreateFilmRollFeatureModel.swift */,
+				14DC4726D18EE54637C59AF5 /* CreateFilmRollScreen.swift */,
+			);
+			path = CreateFilmRoll;
+			sourceTree = "<group>";
+		};
+		394D17B811FF7E51C66EFC29 = {
+			isa = PBXGroup;
+			children = (
+				D2F9CBF07B1DE91AB8040423 /* LumoRoll */,
+				6EAF61550AF8C5FA060B925E /* LumoRollTests */,
+				2F2DCA9C6DDA1DBAA92DD069 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A1849AD528D8EF945A86DC2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9DD128FF3D9E377F39DBD2BE /* AppContainerBoundaryTests.swift */,
+				69384C07C390ACC4E00462A5 /* PhotoDisplayImageStoreTests.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		44EE043BF1CC9613D7459699 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CA35EF22D858DF5357675D45 /* FilmRollCard.swift */,
+				2EF798E9C6F0132EE61B281A /* FilmStrip.swift */,
+				B10248B3CF217022C627D585 /* LumoButtons.swift */,
+				83DD2FE18618F47FF64768E2 /* LumoPhotoDisplayData.swift */,
+				335ED933EC55D2F7DA68F6A2 /* LumoPreviewFixtures.swift */,
+				EA2AEF96F11133BF8AAC77F6 /* PaletteRow.swift */,
+				527CF3F4D727E97D6FE8B510 /* PreviewControls.swift */,
+				61E75BF7A35D97135ED5BE3A /* ReversalFilmRollCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		584344F00CEBD96B9444292C /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				129ACA470D74319109EA6BE4 /* LUTProcessingTests.swift */,
+				C94B5628333374D5B70DB750 /* Rendering */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		5EC22628FE4E3F67321C7BCA /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				567685FA432E830702F60C70 /* ApplyFilmRollUseCase.swift */,
+				A5B3D11B7B525424452CF9FD /* CreateFilmRollUseCase.swift */,
+				7032A23D0052731A18DA1DE8 /* ExportLUTUseCase.swift */,
+				D9F99225EDF563F30EE09A34 /* RenderApplyPreviewUseCase.swift */,
+				8A3FB70D5F455674E8948896 /* SaveAppliedPhotoToPhotosUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		6468E7B02085DBCFACA5B778 /* ApplyPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				F237A76213D20AD7658EB615 /* ApplyPhotoFeatureModel.swift */,
+				38FEA5DF2782568449562B3C /* ApplyPhotoScreen.swift */,
+			);
+			path = ApplyPhoto;
+			sourceTree = "<group>";
+		};
+		6809AD255FE5835F7F6AD445 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CAE1CBA457A613937DA1DBF7 /* AppContainer.swift */,
+				916A30CEB69DD2AA1F2DB8FB /* AppRoute.swift */,
+				3525A3C87F4791B527CEF800 /* LumoRollApp.swift */,
+				ADAE24FD7C2B2E51D99513A0 /* PhotoDisplayImageStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6EAF61550AF8C5FA060B925E /* LumoRollTests */ = {
+			isa = PBXGroup;
+			children = (
+				607E8666F4CDF306018A0E63 /* LumoRollSmokeTests.swift */,
+				3A1849AD528D8EF945A86DC2 /* App */,
+				A30425EC3E1D3F157624A6D3 /* DesignSystem */,
+				DD8ECEBFED925B9EC7A9943F /* Domain */,
+				A1E1BD78015AC40683E487A3 /* Features */,
+				584344F00CEBD96B9444292C /* Processing */,
+				750E98C739760D9BF43CC25D /* Storage */,
+				EE8E44D4B346F3BB973F3A3F /* SystemIntegrations */,
+			);
+			path = LumoRollTests;
+			sourceTree = "<group>";
+		};
+		750E98C739760D9BF43CC25D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7932FBACE98B6068B51ADFFC /* AssetStoreTests.swift */,
+				FE744EC161A390DEEC7D8AD2 /* FileFilmRollAssetWriterTests.swift */,
+				BC0DFC717D707555508017F7 /* FileFilmRollRepositoryTests.swift */,
+				27BD6F571747F252D81370F8 /* FilmRollManifestTests.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		7CF929B8E33A2BA80B0E440A /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				038CF09E2AF5971D28B5C8B7 /* LUT */,
+				8226EDD073CC05C687F50CD7 /* Rendering */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		8226EDD073CC05C687F50CD7 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				359995973788231C14477017 /* CoreImagePhotoPreviewRenderer.swift */,
+				6B5A7FF9724C14371BA8713D /* CoreImagePhotoRenderer.swift */,
+				D0511B28120B1EBBED8BFF74 /* CoreImageRenderer.swift */,
+				B1D8C0A01AB26465CEAB1485 /* CoreImageThumbnailRenderer.swift */,
+				5AB8F04D159DCD3ADE3BFE27 /* JPEGImageEncoder.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		964472B1D55B63CADFFD5ACB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01331935C328E0031835D3C2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1E1BD78015AC40683E487A3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D82786762AA6B6773148767C /* ApplyPhotoImportFlowTests.swift */,
+				61B0CA813CAB1078A2FAAEC1 /* FeatureModelTests.swift */,
+				2B3D5A8C4AB2C98D6C37772B /* FilmRollDetailExportPresentationTests.swift */,
+				6FBB948DD0128A04DE86C86A /* FilmRollDetailLayoutTests.swift */,
+				205ED0A881D0542FCB8ABB74 /* FilmRollDisplayDataTests.swift */,
+				DA55BF2CC6F42BCC9587197A /* Task7BBoundaryHelperTests.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A30425EC3E1D3F157624A6D3 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				283040744874391379378126 /* DesignSystemHelperTests.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		A519336E4B30ED63BA19EFB2 /* FullscreenViewer */ = {
+			isa = PBXGroup;
+			children = (
+				61BF1329DD3865A81EC40989 /* FullscreenViewerScreen.swift */,
+			);
+			path = FullscreenViewer;
+			sourceTree = "<group>";
+		};
+		ACCF1F85593B2A76E477AF34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				029FFC3129B92F484218BE61 /* FilmRoll.swift */,
+				BAD9BDD554A23127E6DF4B1B /* LumoError.swift */,
+				791EE25FAA91BDA33DA5A069 /* LUT3D.swift */,
+				52428829B43D447ED65BFC43 /* ProcessedPhoto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEA23988BDA87A8751151160 /* SystemIntegrations */ = {
+			isa = PBXGroup;
+			children = (
+				40776639F60B1B768E57622A /* AppAssetURLResolver.swift */,
+				090599679907E4C400DD667F /* LocalPhotoImageLoader.swift */,
+				8F752326F90D32AADD41FED1 /* PhotoImportStagingService.swift */,
+				D0913523205957CB1781BBC0 /* PhotoKitPhotoLibraryWriter.swift */,
+			);
+			path = SystemIntegrations;
+			sourceTree = "<group>";
+		};
+		BDAC8A6CAC59D77650DD60A9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF1F85593B2A76E477AF34 /* Models */,
+				F121704B2C398CFB9183595C /* Protocols */,
+				5EC22628FE4E3F67321C7BCA /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C94B5628333374D5B70DB750 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				3CB2FD5D2BE32FEED45692A0 /* CoreImagePhotoPreviewRendererTests.swift */,
+				4DAD3A1AD66A3EDFAA1FF5CC /* CoreImagePhotoRendererTests.swift */,
+				AE3E26B96FBC9965E7AE8D70 /* CoreImageRendererTests.swift */,
+				EDC173940E896ED35B13ADD1 /* CoreImageThumbnailRendererTests.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		D2F9CBF07B1DE91AB8040423 /* LumoRoll */ = {
+			isa = PBXGroup;
+			children = (
+				6809AD255FE5835F7F6AD445 /* App */,
+				1E4B009BE2570E9A7CE67583 /* DesignSystem */,
+				BDAC8A6CAC59D77650DD60A9 /* Domain */,
+				123816CB3425F7AECB2E85CE /* Features */,
+				7CF929B8E33A2BA80B0E440A /* Processing */,
+				964472B1D55B63CADFFD5ACB /* Resources */,
+				28AD66180210508412736B4A /* Storage */,
+				AEA23988BDA87A8751151160 /* SystemIntegrations */,
+			);
+			path = LumoRoll;
+			sourceTree = "<group>";
+		};
+		DD8ECEBFED925B9EC7A9943F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3ACF290F16AEB83E665686AF /* ApplyFilmRollUseCaseTests.swift */,
+				BE6FAE378DEF71E61815CC65 /* CreateFilmRollUseCaseTests.swift */,
+				89ECF36F07C3C624133994A4 /* DomainModelTests.swift */,
+				E0074290F767621765393E86 /* ExportLUTUseCaseTests.swift */,
+				9CA5AEF6EC10C2C6DDB46303 /* RenderApplyPreviewUseCaseTests.swift */,
+				D93ED9C6DCE828B849D71A63 /* SaveAppliedPhotoToPhotosUseCaseTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EE8E44D4B346F3BB973F3A3F /* SystemIntegrations */ = {
+			isa = PBXGroup;
+			children = (
+				138F38893B7B8001E156693A /* AppAssetURLResolverTests.swift */,
+				EB26B1AC2E8151C8126959BD /* LocalPhotoImageLoaderTests.swift */,
+				501588A34F8E73869915BBEE /* PhotoImportStagingServiceTests.swift */,
+				F71B79F559088BBEA9851D71 /* PhotoKitPhotoLibraryWriterTests.swift */,
+				6381981BDE9426676F5DF0EF /* SystemIntegrationImageFixtures.swift */,
+			);
+			path = SystemIntegrations;
+			sourceTree = "<group>";
+		};
+		F121704B2C398CFB9183595C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E9AEF2F054C7A5D43F5F93C7 /* FilmRollAssetWriting.swift */,
+				7FD3FD3841AE93BD4CDEA8A6 /* FilmRollRepository.swift */,
+				1E62BBD0F8530C9C97214C77 /* LUTExporting.swift */,
+				E3AD6A32AD8966B090071429 /* LUTGenerating.swift */,
+				D17DF58D8711745A930E1302 /* PhotoImporting.swift */,
+				4F314FD9263EEFAD3F3AC04D /* PhotoLibraryWriting.swift */,
+				9A9C7304C91F0DB4420E7393 /* PhotoPreviewRendering.swift */,
+				9549C969B5657233FD02EA3F /* PhotoRendering.swift */,
+				25B2E8BACDC39F0813FDF4F7 /* ThumbnailRendering.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8077D7EA3FA41FE034B32E0 /* LumoRoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68F166CF3E8E8A94AC1B5F83 /* Build configuration list for PBXNativeTarget "LumoRoll" */;
+			buildPhases = (
+				E9F8DBFB68C063B8F20AB90C /* Sources */,
+				3B85D431541A358527A5E41D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LumoRoll;
+			packageProductDependencies = (
+			);
+			productName = LumoRoll;
+			productReference = 7E4E788E361DED8CDE8C82D9 /* LumoRoll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCCD09F757D183DB2BE1217A /* LumoRollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670A371A62D86F395E75AFDD /* Build configuration list for PBXNativeTarget "LumoRollTests" */;
+			buildPhases = (
+				48E7CB65124F6ACD42253D6F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F1C2A528E04119D49B7DFB3 /* PBXTargetDependency */,
+			);
+			name = LumoRollTests;
+			packageProductDependencies = (
+			);
+			productName = LumoRollTests;
+			productReference = 15C76DA5718F1AEAA43655C7 /* LumoRollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54F4C56025DAA968C3110EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B8077D7EA3FA41FE034B32E0 = {
+						ProvisioningStyle = Automatic;
+					};
+					DCCD09F757D183DB2BE1217A = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 599A5996DCD1E2CE60A5B013 /* Build configuration list for PBXProject "LumoRoll" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 394D17B811FF7E51C66EFC29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2F2DCA9C6DDA1DBAA92DD069 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8077D7EA3FA41FE034B32E0 /* LumoRoll */,
+				DCCD09F757D183DB2BE1217A /* LumoRollTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B85D431541A358527A5E41D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1582A4D98955BD6D955F4C7B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E7CB65124F6ACD42253D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9629425D250809099254F974 /* AppAssetURLResolverTests.swift in Sources */,
+				5365C91499555CC5A81D4F00 /* AppContainerBoundaryTests.swift in Sources */,
+				8D91184F454F20266F15FC27 /* ApplyFilmRollUseCaseTests.swift in Sources */,
+				ECF1DD35B457A430896E052C /* ApplyPhotoImportFlowTests.swift in Sources */,
+				D113C407FE15C3F8BD30E0FA /* AssetStoreTests.swift in Sources */,
+				FFD08ACB47F87E99615883B7 /* CoreImagePhotoPreviewRendererTests.swift in Sources */,
+				A929974DCA1923AB90B48A4F /* CoreImagePhotoRendererTests.swift in Sources */,
+				4C4727EBDD4D057398811967 /* CoreImageRendererTests.swift in Sources */,
+				AC4AAD64FD43B15E74BEB757 /* CoreImageThumbnailRendererTests.swift in Sources */,
+				0B37988CD34EAF4763897E28 /* CreateFilmRollUseCaseTests.swift in Sources */,
+				8EA17A74D2BE0D27C3E26ABA /* DesignSystemHelperTests.swift in Sources */,
+				D4F1960677D700F41D771A33 /* DomainModelTests.swift in Sources */,
+				42F597353B90BAE5C79C1E36 /* ExportLUTUseCaseTests.swift in Sources */,
+				D65F2415A963FF147399EE66 /* FeatureModelTests.swift in Sources */,
+				AEC18E5DC91A3DC17D5322DE /* FileFilmRollAssetWriterTests.swift in Sources */,
+				6984F5254FEB6EC77C58A879 /* FileFilmRollRepositoryTests.swift in Sources */,
+				65C7E7187625EA1A056F9074 /* FilmRollDetailExportPresentationTests.swift in Sources */,
+				C1FF68D9849BAD8CA2EF15F3 /* FilmRollDetailLayoutTests.swift in Sources */,
+				BAB9D031CC32E20747161D71 /* FilmRollDisplayDataTests.swift in Sources */,
+				D247776E45332DF8343433D4 /* FilmRollManifestTests.swift in Sources */,
+				2F0D70D3CED5695FDDE58247 /* LUTProcessingTests.swift in Sources */,
+				6195B93DD0AA0181F64449B4 /* LocalPhotoImageLoaderTests.swift in Sources */,
+				E8B9AD82F67F760067BA9EE5 /* LumoRollSmokeTests.swift in Sources */,
+				7508ED2B45640772E152CFC8 /* PhotoDisplayImageStoreTests.swift in Sources */,
+				000967E764D55EB5FF7D4F3E /* PhotoImportStagingServiceTests.swift in Sources */,
+				CE8C043EFEECE8F129C8FBB9 /* PhotoKitPhotoLibraryWriterTests.swift in Sources */,
+				45626D1AE9951E485EABBCC0 /* RenderApplyPreviewUseCaseTests.swift in Sources */,
+				535C7204D29876FE17F33A8A /* SaveAppliedPhotoToPhotosUseCaseTests.swift in Sources */,
+				2747CF431976076296F76D54 /* SystemIntegrationImageFixtures.swift in Sources */,
+				BDEF5A10AD78CD2C9F756252 /* Task7BBoundaryHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F8DBFB68C063B8F20AB90C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1F60E269E71BB2F2713816 /* AppAssetURLResolver.swift in Sources */,
+				7663E16E16301EB4E5292504 /* AppContainer.swift in Sources */,
+				EB4A0EAAEA0295FEAF274C92 /* AppRoute.swift in Sources */,
+				0CF9C8879249885D60E693F4 /* ApplyFilmRollUseCase.swift in Sources */,
+				8092C9A78CF11B298F07D68E /* ApplyPhotoFeatureModel.swift in Sources */,
+				CE91EDAE55DE045A16E28EC3 /* ApplyPhotoScreen.swift in Sources */,
+				454D1D58CAC715056F773822 /* AssetStore.swift in Sources */,
+				10ABDC2AC809A2F59821D546 /* CoreImagePhotoPreviewRenderer.swift in Sources */,
+				73B742747DFF39A309E6BABC /* CoreImagePhotoRenderer.swift in Sources */,
+				1E711CB17BAFB3E3A7C86577 /* CoreImageRenderer.swift in Sources */,
+				C72ED28B4566B5EE34FB1E90 /* CoreImageThumbnailRenderer.swift in Sources */,
+				A1B53FE4F23D4143AAE39797 /* CreateFilmRollFeatureModel.swift in Sources */,
+				21B277CC8BE6736DC1ED50ED /* CreateFilmRollScreen.swift in Sources */,
+				FF77F5B14658039D0CBA2ADA /* CreateFilmRollUseCase.swift in Sources */,
+				107A666AD5192B5127F9229E /* CubeExporter.swift in Sources */,
+				21067CE1BA0222837DD32BFF /* CubeLUTExportDocument.swift in Sources */,
+				1E866CD664518A012A841685 /* ExportLUTUseCase.swift in Sources */,
+				FEE69F354D5E4356E3DC215E /* FileFilmRollAssetWriter.swift in Sources */,
+				3478E5272519D519FAB887B1 /* FileFilmRollRepository.swift in Sources */,
+				FE4F281AAAA53420AD651453 /* FilmRoll.swift in Sources */,
+				148CD9F48E6479E2378E84AF /* FilmRollAssetWriting.swift in Sources */,
+				884FA97CB5E3D7B43B49A9A9 /* FilmRollCard.swift in Sources */,
+				61057AE662669A41ADA55CCB /* FilmRollDetailFeatureModel.swift in Sources */,
+				A03ED9E4D1FF2FF8DE392C4C /* FilmRollDetailScreen.swift in Sources */,
+				C8B245B944A2FAAACE266133 /* FilmRollDisplayData.swift in Sources */,
+				F41E491C493D6E9888CFEA57 /* FilmRollManifest.swift in Sources */,
+				8342FE6292D4989C9AB9B051 /* FilmRollRepository.swift in Sources */,
+				3101200F7D115BE296B95FCD /* FilmStrip.swift in Sources */,
+				EE57DB9BD36F006B65BBD204 /* FullscreenViewerScreen.swift in Sources */,
+				5EEC5876A043ECC062F4217A /* JPEGImageEncoder.swift in Sources */,
+				FC866ED8F7F15C7297F6C909 /* LUT3D.swift in Sources */,
+				6A85F45254F016DD1CA67170 /* LUTExporting.swift in Sources */,
+				257B42D462DF8554D3D8C7B0 /* LUTGenerating.swift in Sources */,
+				78D5D7E875CEA842AB83503B /* LUTGenerator.swift in Sources */,
+				7B69220651E05FABD11A7459 /* LibraryFeatureModel.swift in Sources */,
+				3348708815532B23E8C174A3 /* LibraryScreen.swift in Sources */,
+				B31A6A5E9843648731991BA9 /* LocalPhotoImageLoader.swift in Sources */,
+				8D929F97F2FE3D4C9D58C07E /* LumoButtons.swift in Sources */,
+				D4B5B2987E612688620D19B4 /* LumoError.swift in Sources */,
+				F4A9F20DA261D2351C505CA0 /* LumoPhotoDisplayData.swift in Sources */,
+				EB6E96232DA9F161ABA7C275 /* LumoPreviewFixtures.swift in Sources */,
+				6F68AD85C6231840DE071BD1 /* LumoRollApp.swift in Sources */,
+				CD6C1CC55CCFC40C60F96DBE /* LumoTheme.swift in Sources */,
+				540AAB61F2AAE43E6218D917 /* PaletteRow.swift in Sources */,
+				AE53E903913D0A6A0B5F098D /* PhotoDisplayImageStore.swift in Sources */,
+				AB1BC3767B5039E90FAA5D97 /* PhotoImportStagingService.swift in Sources */,
+				0AAB926B4F3C7F10B4DDCB05 /* PhotoImporting.swift in Sources */,
+				AF76F83052330737E2D9BB07 /* PhotoKitPhotoLibraryWriter.swift in Sources */,
+				0F75D90826E1C6E84FE52350 /* PhotoLibraryWriting.swift in Sources */,
+				C5D85184BB26F7C54EA7E343 /* PhotoPreviewRendering.swift in Sources */,
+				8A3388477804FF19380E2064 /* PhotoRendering.swift in Sources */,
+				0129679C17BFA0D9463B10ED /* PreviewControls.swift in Sources */,
+				179892DE9FE3488423046386 /* ProcessedPhoto.swift in Sources */,
+				93C9DAB74C3894953C7E00A2 /* ReferenceImageAnalyzer.swift in Sources */,
+				DBEEEFBDEA736D5B9F6C6A25 /* RenderApplyPreviewUseCase.swift in Sources */,
+				5DB93CBDB639C9A86F30F8FD /* ReversalFilmRollCard.swift in Sources */,
+				D4E0A91863DDA0A5134AD276 /* SaveAppliedPhotoToPhotosUseCase.swift in Sources */,
+				C014A7415B2B76E5E379EE8F /* ThumbnailRendering.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F1C2A528E04119D49B7DFB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8077D7EA3FA41FE034B32E0 /* LumoRoll */;
+			targetProxy = CE726FACB1AF228A05268949 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B928A753A669F68AD8B5E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LumoRoll.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LumoRoll.app/LumoRoll";
+			};
+			name = Debug;
+		};
+		87026A29D551F207E9364CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C6622196370A5A4FBF472F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LumoRoll.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LumoRoll.app/LumoRoll";
+			};
+			name = Release;
+		};
+		CE7F3652E9D9F1CD0795FBAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LumoRoll/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LumoRoll;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D3394908D8AD5313A5659157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E309F60B540E827FD9B01F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LumoRoll/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LumoRoll;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		599A5996DCD1E2CE60A5B013 /* Build configuration list for PBXProject "LumoRoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3394908D8AD5313A5659157 /* Debug */,
+				87026A29D551F207E9364CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		670A371A62D86F395E75AFDD /* Build configuration list for PBXNativeTarget "LumoRollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B928A753A669F68AD8B5E04 /* Debug */,
+				C6622196370A5A4FBF472F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		68F166CF3E8E8A94AC1B5F83 /* Build configuration list for PBXNativeTarget "LumoRoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E309F60B540E827FD9B01F09 /* Debug */,
+				CE7F3652E9D9F1CD0795FBAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54F4C56025DAA968C3110EB /* Project object */;
+}

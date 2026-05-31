@@ -1,0 +1,99 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode local state and build output
+DerivedData/
+.derivedData/
+.derivedData-actions/
+build/
+*.xcarchive/
+*.xcresult/
+*.dSYM/
+*.dSYM.zip
+*.ipa
+*.app
+*.moved-aside
+*.hmap
+
+# Xcode user-specific workspace files
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager and dependency managers
+.build/
+Packages/
+Carthage/Build/
+Pods/
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node / web tooling
+node_modules/
+web/node_modules/
+web/dist/
+web/.vite/
+web/.remotion/
+web/out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Local signing and developer-specific project state
+Config/Signing.local.xcconfig
+* 2.*
+* 2/
+
+# Agent/private coordination notes
+AGENTS.md
+doc/implementation/**
+
+# Private/offline model research notes
+doc/algorithms/lut-training-corpus.md
+doc/algorithms/photo-training-datasets.md
+doc/algorithms/model-evaluation-harness.md
+doc/algorithms/tiny-training-baseline.md
+doc/algorithms/neural-training-pipeline.md
+
+# Offline research tooling and generated training data are private.
+tools/**
+tests/**
+
+# Offline generated datasets and model-training outputs.
+data/**
+
+# Private model artifacts. The public repo builds with Algorithm V2.
+LumoRoll/Resources/Models/**
+!LumoRoll/Resources/Models/
+!LumoRoll/Resources/Models/README.md
+
+# Local download previews and experiment exports
+downloads/**
+!downloads/
+!downloads/**/
+!downloads/**/README.md
+
+# Common training/checkpoint artifacts outside ignored data folders
+*.pt
+*.pth
+*.ckpt
+*.onnx

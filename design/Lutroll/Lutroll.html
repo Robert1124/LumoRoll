@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lutroll — color rolls for everyone</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="lutroll-tokens.css"/>
+
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #1F1A14; }
+  body {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Geist", -apple-system, system-ui, sans-serif;
+    color: #FBF7EF;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at 30% 20%, #2A2520 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 80%, #2C261E 0%, transparent 55%),
+      #1A1612;
+    background-attachment: fixed;
+  }
+
+  /* phone shelf — center the iOS frame & scale to viewport */
+  .phone-stage {
+    position: relative;
+    width: 100vw; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .phone-wrap {
+    position: relative;
+    transform-origin: center;
+  }
+
+  /* environment label */
+  .env-tag {
+    position: fixed; left: 24px; top: 24px;
+    display: flex; align-items: center; gap: 10px;
+    color: rgba(255,255,255,0.55);
+    font-family: "Geist Mono", monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    z-index: 2;
+  }
+  .env-tag .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #E89B7A;
+    box-shadow: 0 0 12px #E89B7A;
+    animation: env-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes env-pulse { 0%,100% { opacity: 0.6; } 50% { opacity: 1; } }
+
+  .env-hint {
+    position: fixed; right: 24px; top: 24px;
+    color: rgba(255,255,255,0.45);
+    font-family: "Geist", sans-serif;
+    font-size: 11.5px; letter-spacing: -0.005em;
+    z-index: 2; text-align: right; line-height: 1.4;
+    max-width: 220px;
+  }
+  .env-hint em { font-family: "Instrument Serif", serif; font-style: italic; font-size: 14px; color: rgba(255,255,255,0.72); }
+</style>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+  integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+  integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+  integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="env-tag">
+  <span class="dot"></span>
+  Lutroll · v0.1 prototype
+</div>
+<div class="env-hint">
+  Tap a roll to open it.<br/>
+  <em>Tweaks</em> toggles palette &amp; style.
+</div>
+
+<div class="phone-stage" id="phone-stage">
+  <div class="phone-wrap" id="phone-wrap">
+    <div id="root"></div>
+  </div>
+</div>
+
+<!-- iOS frame + tweaks shell -->
+<script type="text/babel" src="ios-frame.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+
+<!-- Lutroll source -->
+<script type="text/babel" src="lutroll-data.jsx"></script>
+<script type="text/babel" src="lutroll-components.jsx"></script>
+<script type="text/babel" src="lutroll-screen-library.jsx"></script>
+<script type="text/babel" src="lutroll-screen-create.jsx"></script>
+<script type="text/babel" src="lutroll-screen-detail.jsx"></script>
+<script type="text/babel" src="lutroll-screen-apply.jsx"></script>
+<script type="text/babel" src="lutroll-screen-fullscreen.jsx"></script>
+<script type="text/babel" src="lutroll-app.jsx"></script>
+
+<script type="text/babel">
+  // mount the app inside an iOS frame
+  function Mount() {
+    const [dark, setDark] = React.useState(false);
+    React.useEffect(() => {
+      const onRoute = (e) => {
+        setDark(!!(e.detail && e.detail.dark));
+      };
+      window.addEventListener("lr-route", onRoute);
+      return () => window.removeEventListener("lr-route", onRoute);
+    }, []);
+    return (
+      <IOSDevice width={402} height={874} dark={dark}>
+        <div style={{ height: "100%", overflow: "hidden", position: "relative" }}>
+          <LutrollApp/>
+        </div>
+      </IOSDevice>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(<Mount/>);
+
+  // responsive scale — fit the phone in the viewport with comfortable padding
+  function fitPhone() {
+    const stage = document.getElementById("phone-stage");
+    const wrap  = document.getElementById("phone-wrap");
+    if (!stage || !wrap) return;
+    const pad = 24;
+    const vw = stage.clientWidth - pad * 2;
+    const vh = stage.clientHeight - pad * 2;
+    const baseW = 402, baseH = 874;
+    const scale = Math.min(vw / baseW, vh / baseH, 1.0);
+    wrap.style.transform = `scale(${scale})`;
+  }
+  window.addEventListener("resize", fitPhone);
+  // run after first paint
+  setTimeout(fitPhone, 50);
+  setTimeout(fitPhone, 400);
+</script>
+
+</body>
+</html>
