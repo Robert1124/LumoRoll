@@ -105,6 +105,20 @@ button {
   font-weight: 650;
 }
 
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+}
+
+.nav-testflight {
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--cream-50) !important;
+  background: var(--ink-900);
+  box-shadow: 0 7px 16px rgba(31, 26, 20, 0.12);
+}
+
 .hero-section {
   position: relative;
   min-height: 96vh;

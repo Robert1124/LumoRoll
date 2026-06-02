@@ -4,9 +4,11 @@ LumoRoll is a native iPhone-first SwiftUI app for turning one reference photo in
 
 The product is intentionally light, friendly, film-inspired, and local-first. It is not a generic filter app and not a professional grading suite.
 
+[Join the LumoRoll TestFlight](https://testflight.apple.com/join/bcH5zNCR)
+
 ## Current Status
 
-The app implementation exists in this workspace.
+The app is feature-complete as of 2026-06-01. The remaining work before a public or App Store release is release QA, device profiling, packaging, and policy/copy review rather than feature implementation.
 
 - Generated Xcode project: `LumoRoll.xcodeproj`
 - Project definition: `project.yml`
@@ -38,11 +40,11 @@ The production app may include a private, locally bundled Core ML base-LUT predi
 - Apply a Film Roll to a target photo through an import-first flow with intensity preview, explicit `Save`, and `Cancel`.
 - Render saved outputs by applying the base LUT, optional app-only adaptive post process, and intensity blending.
 - Save processed output back into the Film Roll.
-- Save processed output to Photos only after the user explicitly chooses Save to Photos.
+- Share processed output from the Fullscreen Viewer through the system share sheet, where the user can save the rendered image to Photos.
 - Export the Film Roll base LUT through a system `.cube` file export flow. Sample analysis, confidence, model, and adaptive metadata stay inside the app and are not written into `.cube`.
 - View frames in a dark fullscreen viewer; processed frames can be shared, edited, or removed.
 
-The current app is photo-only and local-first. It does not include video import/export, video processing, HDR, Log workflows, advanced Display P3 handling, iCloud sync, accounts, cloud processing, network-based AI, search, duplicate, or fullscreen Save to Photos.
+The current app is photo-only and local-first. It does not include video import/export, video processing, HDR, Log workflows, advanced Display P3 handling, iCloud sync, accounts, cloud processing, network-based AI, search, duplicate, or a standalone fullscreen Save to Photos button.
 
 ## Architecture
 

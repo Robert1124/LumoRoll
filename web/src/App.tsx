@@ -9,6 +9,8 @@ const assets = {
   frontBlockDark: '/lumoroll-assets/lightbox-front-block-dark.png',
 };
 
+const TESTFLIGHT_URL = 'https://testflight.apple.com/join/bcH5zNCR';
+
 const rolls = [
   {
     name: 'Warm Haze',
@@ -232,6 +234,9 @@ function App() {
           <a href="#rolls">Film Rolls</a>
           <a href="#apply">Apply</a>
           <a href="#privacy">Privacy</a>
+          <a className="nav-testflight" href={TESTFLIGHT_URL} target="_blank" rel="noreferrer">
+            TestFlight
+          </a>
         </div>
       </nav>
 
@@ -244,13 +249,13 @@ function App() {
               Turn one reference photo into a personal Film Roll, apply it to your photos, and export a reusable LUT without sending images to the cloud.
             </p>
             <div className="hero-actions">
-              <a className="primary-action" href="#rolls">
+              <a className="primary-action" href={TESTFLIGHT_URL} target="_blank" rel="noreferrer">
+                <Icon name="phone" />
+                Join TestFlight
+              </a>
+              <a className="secondary-action" href="#rolls">
                 <Icon name="film" />
                 See the roll
-              </a>
-              <a className="secondary-action" href="#privacy">
-                <Icon name="shield" />
-                Local-first
               </a>
             </div>
           </div>
@@ -458,7 +463,7 @@ function ReleasePoint({icon, title, text}: {icon: IconName; title: string; text:
   );
 }
 
-type IconName = 'film' | 'shield' | 'cube' | 'lock' | 'photo';
+type IconName = 'film' | 'shield' | 'cube' | 'lock' | 'photo' | 'phone';
 
 function carouselPosition(index: number, selectedIndex: number) {
   const count = rolls.length;
@@ -483,6 +488,7 @@ function Icon({name}: {name: IconName}) {
     cube: 'M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z M12 12l8-4.5 M12 12v9 M12 12L4 7.5',
     lock: 'M7 11V8a5 5 0 0110 0v3 M6 11h12v9H6z',
     photo: 'M4 6h16v12H4z M7 15l3-3 2 2 3-4 3 5 M8 9h.01',
+    phone: 'M8 3h8a2 2 0 012 2v14a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z M10 6h4 M11 18h2',
   };
 
   return (

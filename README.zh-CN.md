@@ -4,9 +4,11 @@ LumoRoll 是一个 iPhone-first 的原生 SwiftUI App，用一张参考照片生
 
 产品方向是轻盈、友好、有胶片感、local-first。它不是普通滤镜 App，也不是专业调色套件。
 
+[加入 LumoRoll TestFlight](https://testflight.apple.com/join/bcH5zNCR)
+
 ## 当前状态
 
-当前 workspace 已经包含完整 App 实现。
+App 已在 2026-06-01 标记为功能完成。公开发布或 App Store 发布前剩余工作是 release QA、真机 profiling、打包和政策/文案 review，而不是功能实现。
 
 - Xcode project：`LumoRoll.xcodeproj`
 - Project definition：`project.yml`
@@ -38,11 +40,11 @@ LumoRoll 是一个 iPhone-first 的原生 SwiftUI App，用一张参考照片生
 - Apply 页面采用先导入 target photo、再预览 intensity，并由用户明确点击 `Save` 或 `Cancel` 的流程。
 - 保存输出时，先应用 base LUT，再运行可选的 App 内 adaptive post process，最后根据当前 intensity 混合原图和处理结果。
 - 支持把处理结果保存回当前 Film Roll。
-- 只有用户明确点击 Save to Photos 时，才请求并写入系统相册。
+- Fullscreen viewer 支持通过系统 Share Sheet 分享 processed output；用户可以在系统分享面板里把渲染后的图片保存到 Photos。
 - 支持通过系统文件导出流程导出 Film Roll 的 base LUT `.cube`。sample analysis、confidence、model 和 adaptive metadata 只留在 App 内，不写入 `.cube`。
 - Fullscreen viewer 使用深色沉浸式浏览；processed frames 支持 Share、Edit 和 Remove。
 
-当前 App 是 photo-only 和 local-first 的产品形态，不包含视频导入/导出、视频处理、HDR、Log、Display P3 高级流程、iCloud 同步、账号、云处理、联网 AI、搜索、复制 Film Roll，以及 fullscreen Save to Photos。
+当前 App 是 photo-only 和 local-first 的产品形态，不包含视频导入/导出、视频处理、HDR、Log、Display P3 高级流程、iCloud 同步、账号、云处理、联网 AI、搜索、复制 Film Roll，以及独立的 fullscreen Save to Photos 按钮。
 
 ## 架构
 
